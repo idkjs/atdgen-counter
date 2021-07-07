@@ -1,12 +1,10 @@
 ####{BSB GENERATED: NO EDIT
-B lib/bs
-FLG -open BsAtdgenGeneratorIntegrationTest
-FLG -ppx '/Users/mando/Downloads/bs-atdgen-generator-test/node_modules/bs-platform/darwin/bsc.exe -as-ppx '
-S /Users/mando/Downloads/bs-atdgen-generator-test/node_modules/bs-platform/lib/ocaml
-B /Users/mando/Downloads/bs-atdgen-generator-test/node_modules/bs-platform/lib/ocaml
+FLG -ppx '/Users/mando/Github/atdgen-counter/node_modules/bs-platform/darwin/bsc.exe -as-ppx '
+S /Users/mando/Github/atdgen-counter/node_modules/bs-platform/lib/ocaml
+B /Users/mando/Github/atdgen-counter/node_modules/bs-platform/lib/ocaml
 FLG -w +a-4-9-20-40-41-42-50-61-102
-S /Users/mando/Downloads/bs-atdgen-generator-test/node_modules/@ahrefs/bs-atdgen-codec-runtime/lib/ocaml
-B /Users/mando/Downloads/bs-atdgen-generator-test/node_modules/@ahrefs/bs-atdgen-codec-runtime/lib/ocaml
+S /Users/mando/Github/atdgen-counter/node_modules/@ahrefs/bs-atdgen-codec-runtime/lib/ocaml
+B /Users/mando/Github/atdgen-counter/node_modules/@ahrefs/bs-atdgen-codec-runtime/lib/ocaml
 S src/atd
 B lib/bs/src/atd
 S src

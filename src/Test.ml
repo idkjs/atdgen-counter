@@ -1,1 +1,1 @@
-type t = Foo_t.t
+type t = Counter_t.t

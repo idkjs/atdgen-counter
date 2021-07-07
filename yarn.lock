@@ -14,7 +14,7 @@
   resolved "https://registry.yarnpkg.com/@glennsl/bs-json/-/bs-json-5.0.4.tgz#8a80906f3b5e04d78dc06722e5987ff6499c89a8"
   integrity sha512-Th9DetZjRlMZrb74kgGJ44oWcoFyOTE884WlSuXft0Cd+J09vHRxiB7eVyK7Gthb4cSevsBBJDHYAbGGL25wPw==
 
-"@jchavarri/bs-atdgen-generator@0.0.9":
+"@jchavarri/bs-atdgen-generator@^0.0.9":
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/@jchavarri/bs-atdgen-generator/-/bs-atdgen-generator-0.0.9.tgz#023065ea73e5f62894acd1c61cc4209cae96f40e"
   integrity sha512-YtNBwB2bgQlPb6ZAVCZUBGempY36UbrgqSXE6iqkk4EghMcaq/jL5F9YGKlQFt6zDulm4qAuTQtMWAkJP6HO1w==

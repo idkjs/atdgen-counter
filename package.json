@@ -1,0 +1,17 @@
+{
+  "name": "bs-atdgen-generator-integration-test",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@jchavarri/bs-atdgen-generator": "^0.0.9",
+    "bs-platform": "9.0.2"
+  },
+  "dependencies": {
+    "@ahrefs/bs-atdgen-codec-runtime": "^2.0.1"
+  }
+}

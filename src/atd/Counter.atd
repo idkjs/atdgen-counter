@@ -1,0 +1,7 @@
+type id = string wrap <ocaml module="Transform.Id">
+
+type t = {
+  ?id : id option;
+  name : string;
+  value : int;
+}
