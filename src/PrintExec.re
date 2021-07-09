@@ -161,7 +161,7 @@ let format_backtrace_slot = (pos, slot) => {
   switch (slot) {
   | Unknown_location(l) =>
     if (l.is_raise) {
-      /* compiler-inserted re-raise, skipped */ None;
+      None /* compiler-inserted re-raise, skipped */;
     } else {
       Some(sprintf("%s unknown location", info(false)));
     }

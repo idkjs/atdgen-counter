@@ -1,12 +1,16 @@
 ####{BSB GENERATED: NO EDIT
-FLG -ppx '/Users/mando/Github/atdgen-counter/node_modules/bs-platform/darwin/bsc.exe -as-ppx '
-S /Users/mando/Github/atdgen-counter/node_modules/bs-platform/lib/ocaml
-B /Users/mando/Github/atdgen-counter/node_modules/bs-platform/lib/ocaml
+FLG -ppx '/Users/mando/Github/Counters/atdgen-counter/node_modules/bs-platform/darwin/bsc.exe -as-ppx '
+S /Users/mando/Github/Counters/atdgen-counter/node_modules/bs-platform/lib/ocaml
+B /Users/mando/Github/Counters/atdgen-counter/node_modules/bs-platform/lib/ocaml
 FLG -w +a-4-9-20-40-41-42-50-61-102
-S /Users/mando/Github/atdgen-counter/node_modules/@ahrefs/bs-atdgen-codec-runtime/lib/ocaml
-B /Users/mando/Github/atdgen-counter/node_modules/@ahrefs/bs-atdgen-codec-runtime/lib/ocaml
-S src/atd
-B lib/bs/src/atd
+S /Users/mando/Github/Counters/atdgen-counter/node_modules/@ahrefs/bs-atdgen-codec-runtime/lib/ocaml
+B /Users/mando/Github/Counters/atdgen-counter/node_modules/@ahrefs/bs-atdgen-codec-runtime/lib/ocaml
+S /Users/mando/Github/Counters/atdgen-counter/node_modules/bs-fetch/lib/ocaml
+B /Users/mando/Github/Counters/atdgen-counter/node_modules/bs-fetch/lib/ocaml
+S /Users/mando/Github/Counters/atdgen-counter/node_modules/reason-future/lib/ocaml
+B /Users/mando/Github/Counters/atdgen-counter/node_modules/reason-future/lib/ocaml
+S shared
+B lib/bs/shared
 S src
 B lib/bs/src
 ####BSB GENERATED: NO EDIT}

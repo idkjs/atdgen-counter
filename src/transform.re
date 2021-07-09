@@ -1,5 +1,5 @@
 module Id = {
-  type t = string
+  type t = string;
 
   let wrap = Fun.id;
 

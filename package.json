@@ -2,16 +2,26 @@
   "name": "bs-atdgen-generator-integration-test",
   "version": "0.1.0",
   "scripts": {
+      "bundle": "esbuild ./src/Api.bs.js --outfile=www/js/bundle.js --bundle --sourcemap --target=chrome58,firefox57,safari11,edge16 --define:process.env.NODE_ENV='\"development\"'",
+    "format": "find src -name \"*.re\" -or -name \"*.rei\"  | xargs bsrefmt --in-place",
+    "atdgen": "atdgen -t shared/counter.atd && atdgen -bs shared/counter.atd",
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
+    "dev-server": "PORT=5000 live-server ./www --host=localhost",
     "clean": "bsb -clean-world"
   },
   "license": "MIT",
   "devDependencies": {
     "@jchavarri/bs-atdgen-generator": "^0.0.9",
-    "bs-platform": "9.0.2"
+    "bs-platform": "9.0.2",
+    "esbuild": "^0.12.15",
+    "concurrently": "^6.0.0",
+    "live-server": "^1.2.1"
   },
   "dependencies": {
-    "@ahrefs/bs-atdgen-codec-runtime": "^2.0.1"
+    "@ahrefs/bs-atdgen-codec-runtime": "^2.0.1",
+    "bs-fetch": "^0.6.2",
+    "isomorphic-fetch": "^3.0.0",
+    "reason-future": "^2.6.0"
   }
 }

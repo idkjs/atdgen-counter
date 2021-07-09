@@ -11,38 +11,30 @@
     }
   ],
   "sources": [
-    "src",
+    { "dir": "src" },
     {
-      "dir": "src/atd",
+      "dir": "shared",
       "generators": [
         {
           "name": "atd_t",
-          "edge": [
-            "Counter_t.ml",
-            "Counter_t.mli",
-            ":",
-            "Counter.atd"
-          ]
+          "edge": ["Counter_t.ml", "Counter_t.mli", ":", "Counter.atd"]
         },
         {
           "name": "atd_bs",
-          "edge": [
-            "Counter_bs.ml",
-            "Counter_bs.mli",
-            ":",
-            "Counter.atd"
-          ]
+          "edge": ["Counter_bs.ml", "Counter_bs.mli", ":", "Counter.atd"]
         }
       ]
     }
   ],
-  "package-specs": {
-    "module": "commonjs",
+"package-specs": {
+    "module": "es6",
     "in-source": true
   },
   "suffix": ".bs.js",
   "bs-dependencies": [
-    "@ahrefs/bs-atdgen-codec-runtime"
+    "@ahrefs/bs-atdgen-codec-runtime",
+    "bs-fetch",
+    "reason-future"
   ],
   "warnings": {
     "error": "+101"
