@@ -24,13 +24,9 @@ let fetchCounters = () => {
   ->Future.flatMapOk(apiResponse =>
       Fetch.Response.json(apiResponse)
       ->FutureJs.fromPromise(err => `FetchCountersError(err))
-      ->Future.mapOk(json => {
-
-          {json};
-        })
+      ->Future.mapOk(json => {json})
     );
 };
-
 
 // let fetchCounters = () => {
 //   Js.Promise.(

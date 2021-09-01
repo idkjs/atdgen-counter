@@ -2,7 +2,7 @@
   "name": "bs-atdgen-generator-integration-test",
   "version": "0.1.0",
   "scripts": {
-      "bundle": "esbuild ./src/Api.bs.js --outfile=www/js/bundle.js --bundle --sourcemap --target=chrome58,firefox57,safari11,edge16 --define:process.env.NODE_ENV='\"development\"'",
+    "bundle": "esbuild ./src/Api.bs.js --outfile=www/js/bundle.js --bundle --sourcemap --target=chrome58,firefox57,safari11,edge16 --define:process.env.NODE_ENV='\"development\"'",
     "format": "find src -name \"*.re\" -or -name \"*.rei\"  | xargs bsrefmt --in-place",
     "atdgen": "atdgen -t shared/counter.atd && atdgen -bs shared/counter.atd",
     "build": "bsb -make-world",
